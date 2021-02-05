@@ -160,9 +160,10 @@ model = Sequential([
 
 This is a model that uses convolutional layers, max pooling and a dense layer at
 the end. For this purpose, it probably could have simply been a small dense
-layer without the other stuff. The convolutional sizes probably don't even make
+layer without the other stuff. ~~The convolutional sizes probably don't even make
 any sense for this specific problem since `32x32` is almost half the size of the
-image.
+image.~~ I made a mistake and the convolutional size is actually `3x3` with 32
+different filters.
 
 The last thing that might matter at all is to do some basic data augmentation:
 
